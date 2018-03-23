@@ -1,0 +1,3 @@
+/home/jrinder/CLionProjects/klumpDemo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jrinder/CLionProjects/klumpDemo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jrinder/CLionProjects/klumpDemo/cmake-build-debug/CMakeFiles/klumpDemo.dir

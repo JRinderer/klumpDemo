@@ -1,0 +1,55 @@
+global
+
+  type
+    vector  :  array [100] of real;
+
+  proc
+    sort (var x : vector,size : int);
+    swap (var a : real,var b : real);
+
+procedure main;
+  dcl
+    a     :  vector;
+    sz    :  int;
+    i     :  int;
+begin
+  write ('enter number of elements: ');
+  readln (sz);
+  for i := 0 to sz-1
+    do;
+    write ('enter real: ');
+    readln (a[i]);
+    end;
+  call sort (a,sz);
+  writeln ('the sorted vector is:');
+  for i := 0 to sz-1
+    writeln (a[i]);
+  writeln ('the end');
+end
+
+procedure sort;
+  dcl
+    i    :  int;
+    j    :  int;
+    loc  :  int;
+begin
+  for i := 0 to size-2
+  do;
+    loc := i;
+    for j := i+1 to size-1
+      if (x[j] < x[loc])
+        then loc := j;
+    if (loc <> i)
+        then call swap (x[i],x[loc]);
+  end;
+end
+
+procedure swap;
+  dcl
+    temp  :  real;
+begin
+  temp := a;
+  a := b;
+  b := temp;
+end
+.
